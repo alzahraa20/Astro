@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    android:interpolator="@android:anim/linear_interpolator">
+
+    //fading effect
+    <alpha
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0"
+
+        android:interpolator="@android:anim/accelerate_interpolator"/>
+
+    //linear translation along y axis
+    <translate
+        android:startOffset="1000"
+        android:fromXDelta="0%p"
+        android:toXDelta="0%p"
+        android:fromYDelta="0%p"
+        android:toYDelta="-100%p"
+        android:duration="800"/>
+
+</set>

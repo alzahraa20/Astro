@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="main_card_height">100dp</dimen>
+    <dimen name="main_card_elevation">20dp</dimen>
+    <dimen name="main_card_radius">20dp</dimen>
+    <dimen name="topic_size">124dp</dimen>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+</resources>
