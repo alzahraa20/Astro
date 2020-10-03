@@ -42,24 +42,28 @@ public class SpaceLessonActivity extends AppCompatActivity {
         videoBn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getBaseContext(), VideoActivity.class));
+                startActivity(new Intent(getBaseContext(), SpaceVideoActivity.class));
             }
         });
 
+        quizBn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getBaseContext(), SpaceQuizActivity.class));
+            }
+        });
+
+
         ArrayList<Conversation_Item> list = new ArrayList<>();
-        list.add(new Conversation_Item("Hello Astro, why are you looking at the sky in this way?","I wonder if the air surrounds all the earth and what does it consist of?"));
-        list.add(new Conversation_Item(" that plants and animals breathe to survive is called the atmosphere which is layers of gases surrounding the earth. The atmosphere is made up of mostly nitrogen (78%) and oxygen (21%). There are lots of other gases that are part of the atmosphere but in much smaller amounts."," but what the importance of the atmosphere? "));
-        list.add(new Conversation_Item("The atmosphere protects Earth like a big blanket of insulation. It absorbs the heat from the Sun and keeps the heat inside the atmosphere helping the Earth to stay warm, called the Greenhouse Effect."+
-                "It also keeps the overall temperature of the Earth fairly steady, especially between night and day. So we don't get too cold at night and too hot during the day. There is also a portion of the atmosphere called the ozone layer. The ozone layer helps to protect the earth from the Sun's radiation." +
-                "This big blanket also helps to form our weather patterns and climate. The weather keeps too much hot air from forming in one place and causes storms and rainfall. All of these things are important to life and the Earth's ecology."," how great the atmosphere is ! but sir you said that it is layers of gases i can see just a sky with clouds. where these layers and how do they look like?"));
-        list.add(new Conversation_Item("The Earth's atmosphere is divided up into 6 major layers:\n" +
-                "The first layer is the Troposphere -(The troposphere) is the layer next to the ground or surface of the Earth. It covers around 30,000-50,000 feet high. This is where we live and even where planes fly. Around 80% of the mass of the atmosphere is in the troposphere. The troposphere is heated by the surface of the Earth.\n" +
-                "The second is Stratosphere -(The stratosphere) extends for the next 32 miles after the troposphere. Unlike the troposphere, the stratosphere gets its heat by the Ozone Layer absorbing radiation from the sun. As a result, it gets warmer the further away you get from the Earth. Weather balloons go as high as the stratosphere.\n" +
-                "Then there is Mesosphere -(The mesosphere) covers the next 50 miles beyond the stratosphere. This is where most meteors burn up upon entry. The coldest place on Earth is at the top of the mesosphere."+
-                " Thermosphere -(The thermosphere)is next and the air is very thin here. Temperatures can get extremely hot in the thermosphere. "+
-                "The Ionosphere is a very active part of the atmosphere, and it grows and shrinks depending on the energy it absorbs from the Sun. The gases in these layers are excited by solar radiation to form ions, which have an electrical charge. Parts of the ionosphere overlap with Earth’s magnetosphere. That’s the area around Earth where charged particles feel Earth’s magnetic field. This is where auroras happen. Those are the bright, beautiful bands of light that you sometimes see near Earth’s poles, and This region is what makes radio communications possible.\n" +
-                "Exosphere - The last layer and the thinnest. It goes all the way to 10,000 km above the Earth's surface.","Where does outer space start?"));
-        list.add(new Conversation_Item("There is no clear definition between the Earth's atmosphere and outer space. There are a few official guidelines, most are between 50 and 80 miles from the surface of the Earth.","It was interesting information thank you"));
+        list.add(new Conversation_Item("Astro, what about doing a solar system maquette tomorrow?","solar system what does it mean?"));
+        list.add(new Conversation_Item("we live on this planet as a part of the solar system, it isn’t just containing our world there are many planets, the sun dozens of moons. The Solar System is part of a bigger grouping of stars called a galaxy. Our galaxy is the Milky Way. ","How is the solar system made up?"));
+        list.add(new Conversation_Item("our solar system is made up of one star that is the sun and eight planets orbit it. They are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune in the order. Also there are Dwarf planets, Comets, Asteroid belt, Kuiper belt, Oort cloud.",
+                "Tell me more about these Objects."));
+        list.add(new Conversation_Item("•Dwarf planets are objects similar to the planets but not large enough. Some of the dwarf planets in the Solar System include Pluto, Ceres, Eris, Haumea, and Makemake." +
+                "\n•Comets are objects made of ice, dust, and rocks that orbit the sun. They often have a visible (tail) of gas that comes from solar radiation and solar wind. Comets originate from the Kuiper belt and the Oort cloud." +
+                "\n•Asteroid belt is a region between the planets Mars and Jupiter. In this region thousands of rocky objects orbit the Sun." +
+                "\n•Kuiper belt is a region of thousands of small bodies that exists outside the orbit of the planets. Objects in the Kuiper belt consist of (ices) such as ammonia, water, and methane."+
+                "\n•Oort cloud exists much further out than the Kuiper belt.The Oort cloud is at the very edge of the Solar System.","Thanks sir for your time."));
 
         Conversation_Adapter adapter = new Conversation_Adapter(list);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getBaseContext(),RecyclerView.VERTICAL,false);

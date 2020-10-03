@@ -4,7 +4,12 @@
     <dimen name="main_card_height">100dp</dimen>
     <dimen name="main_card_elevation">20dp</dimen>
     <dimen name="main_card_radius">20dp</dimen>
-    <dimen name="topic_size">124dp</dimen>
+    <dimen name="topic_size">128dp</dimen>
+    <dimen name="character_size">100dp</dimen>
     <dimen name="margin">16dp</dimen>
     <dimen name="small_margin">8dp</dimen>
+    <dimen name="icon_size">64dp</dimen>
+    <dimen name="large_margin">32dp</dimen>
+    <dimen name="card_height">170dp</dimen>
+
 </resources>

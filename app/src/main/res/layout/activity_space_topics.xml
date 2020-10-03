@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
-    android:orientation="vertical"
+    android:background="@drawable/space_background"
     tools:context=".topics.SpaceTopicsActivity">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -36,7 +35,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin"
             android:layout_weight="5"
-            android:text="play"
+            android:text="@string/activity_btn"
+            android:textAllCaps="false"
             android:textColor="@color/icons"
             android:textStyle="bold" />
 

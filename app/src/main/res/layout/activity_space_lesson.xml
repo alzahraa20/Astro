@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".lessons.SpaceLessonActivity"
-    android:background="@drawable/background">
+    android:background="@drawable/space_background"
+    tools:context=".lessons.SpaceLessonActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/space_lesson_rv"
@@ -37,6 +37,7 @@
             android:text="Quiz"
             android:textColor="@color/icons"
             android:textStyle="bold" />
+
         <Button
             android:id="@+id/video_space_btn"
             android:layout_width="wrap_content"

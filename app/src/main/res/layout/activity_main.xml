@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_weight="2"
-    android:background="@drawable/background"
+    android:background="@drawable/space_background"
     android:orientation="vertical"
     android:paddingTop="32dp"
     android:paddingBottom="32dp"
@@ -21,29 +21,39 @@
         app:cardCornerRadius="@dimen/main_card_radius"
         app:cardElevation="@dimen/main_card_elevation"
         app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="@dimen/topic_size"
-            android:layout_height="@dimen/topic_size"
-            android:layout_gravity="right|center_vertical"
-            app:srcCompat="@drawable/earth" />
+            <ImageView
+                android:layout_width="@dimen/character_size"
+                android:layout_height="@dimen/character_size"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/astro_boy" />
 
-        <ImageView
-            android:layout_width="@dimen/topic_size"
-            android:layout_height="@dimen/topic_size"
-            android:layout_gravity="center"
-            app:srcCompat="@drawable/astro_boy" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/character_size"
+                android:layout_height="@dimen/character_size"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/earth" />
 
-        <Button
-            android:id="@+id/earth_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="70dp"
-            android:layout_gravity="left|center_vertical"
-            android:text="Earth "
-            android:textColor="@color/icons"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            <Button
+                android:id="@+id/earth_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/icon_size"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/small_margin"
+                android:text="@string/earth_btn"
+                android:textAllCaps="false"
+                android:textColor="@color/icons"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
 
 
     </androidx.cardview.widget.CardView>
@@ -58,30 +68,50 @@
         app:cardElevation="@dimen/main_card_elevation"
         app:cardUseCompatPadding="true">
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="@dimen/topic_size"
-            android:layout_height="@dimen/topic_size"
-            android:layout_gravity="center"
-            app:srcCompat="@drawable/alien" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="@dimen/topic_size"
-            android:layout_height="@dimen/topic_size"
-            android:layout_gravity="right|center_vertical"
-            app:srcCompat="@drawable/earth" />
+            <ImageView
+                android:layout_width="@dimen/character_size"
+                android:layout_height="@dimen/character_size"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/alien" />
 
-        <Button
-            android:id="@+id/space_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="70dp"
-            android:layout_gravity="left|center_vertical"
-            android:text="Space"
-            android:textColor="@color/icons"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="@dimen/character_size"
+                android:layout_height="@dimen/character_size"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/mars" />
+
+            <Button
+                android:id="@+id/space_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/icon_size"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/small_margin"
+                android:text="@string/space_btn"
+                android:textAllCaps="false"
+                android:textColor="@color/icons"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/activity_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/icon_size"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/activity_btn"
+        android:textAllCaps="false"
+        android:textColor="@color/icons"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/secondary_text" />
 
 </LinearLayout>

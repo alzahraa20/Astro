@@ -24,6 +24,8 @@ public class Topic_Adapter extends RecyclerView.Adapter<Topic_Adapter.TopicViewH
     }
 
 
+
+
     @NonNull
     @Override
     public TopicViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

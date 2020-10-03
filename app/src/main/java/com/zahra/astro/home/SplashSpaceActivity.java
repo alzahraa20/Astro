@@ -9,12 +9,15 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import com.zahra.astro.R;
-import com.zahra.astro.topics.EarthTopicsActivity;
 import com.zahra.astro.topics.SpaceTopicsActivity;
 
 public class SplashSpaceActivity extends AppCompatActivity {
     ImageView splash_iv;
     Animation animation;
+
+    /**
+     * animation before launch topics activity
+     */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +35,6 @@ public class SplashSpaceActivity extends AppCompatActivity {
 
             @Override
             public void onAnimationEnd(Animation animation) {
-                //go to main activity after splash animation ends
                 Intent intent = new Intent(getBaseContext(), SpaceTopicsActivity.class);
                 startActivity(intent);
             }

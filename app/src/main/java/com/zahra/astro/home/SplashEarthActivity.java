@@ -11,6 +11,10 @@ import android.widget.ImageView;
 import com.zahra.astro.R;
 import com.zahra.astro.topics.EarthTopicsActivity;
 
+/**
+ * animation before launch topics activity
+ */
+
 public class SplashEarthActivity extends AppCompatActivity {
     ImageView splash_iv;
     Animation animation;
@@ -31,7 +35,6 @@ public class SplashEarthActivity extends AppCompatActivity {
 
             @Override
             public void onAnimationEnd(Animation animation) {
-                //go to main activity after splash animation ends
                 Intent intent = new Intent(getBaseContext(), EarthTopicsActivity.class);
                 startActivity(intent);
             }

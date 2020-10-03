@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Astro</string>
+    <string name="earth_btn">Earth</string>
+    <string name="space_btn">Space</string>
+    <string name="activity_btn">Activities</string>
+    <string name="age_activity">Your Age On Other Planets</string>
+    <string name="weight_activity">Your Weight On Other Planets</string>
+    <string name="map_activity">Come See Our World</string>
+    <string name="astro_speech">"Let's Explore"</string>
+    <string name="years">Your Age In Years : </string>
+    <string name="days">Your Age In Days : </string>
+    <string name="birthday">Enter Your Birthday: </string>
+    <string name="earth_weight">Enter Your Weight: </string>
+    <string name="planet_weight">Click On A Planet: </string>
 </resources>
