@@ -47,7 +47,7 @@ public class EarthVideoActivity extends AppCompatActivity {
         });
 
 
-        String videoPath = "android.resource://" + getPackageName()+ "/" + R.raw.space_video;
+        String videoPath = "android.resource://" + getPackageName()+ "/" + R.raw.atmosphere;
         Uri uri = Uri.parse(videoPath);
         earthVid.setVideoURI(uri);
         MediaController mediaController = new MediaController(this);
